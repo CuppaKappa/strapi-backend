@@ -2,27 +2,24 @@
   "kind": "collectionType",
   "collectionName": "carts",
   "info": {
-    "name": "Cart"
+    "name": "Cart",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
     "user": {
+      "via": "cart",
       "plugin": "users-permissions",
       "model": "user"
     },
-    "product": {
-      "model": "product"
-    },
-    "createdAt": {
-      "type": "datetime"
+    "cart_items": {
+      "collection": "cart-items",
+      "via": "cart"
     }
   }
 }

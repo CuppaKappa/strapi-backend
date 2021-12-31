@@ -2,30 +2,30 @@
   "kind": "collectionType",
   "collectionName": "invoices",
   "info": {
-    "name": "Invoice"
+    "name": "Invoice",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
     "user": {
+      "via": "invoices",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "invoice_items": {
+      "collection": "invoice-items",
+      "via": "invoice"
     },
     "status": {
       "type": "string"
     },
     "total": {
       "type": "decimal"
-    },
-    "createdAt": {
-      "type": "datetime"
     }
   }
 }

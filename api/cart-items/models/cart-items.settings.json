@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "invoice_items",
+  "collectionName": "cart_items",
   "info": {
-    "name": "InvoiceItems",
-    "description": ""
+    "name": "CartItems"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "invoice": {
-      "via": "invoice_items",
-      "model": "invoice"
+    "cart": {
+      "via": "cart_items",
+      "model": "cart"
     },
     "product": {
       "model": "product"
-    },
-    "price": {
-      "type": "decimal"
     }
   }
 }

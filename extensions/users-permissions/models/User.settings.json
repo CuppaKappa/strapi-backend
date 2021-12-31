@@ -58,6 +58,14 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "cart": {
+      "via": "user",
+      "model": "cart"
+    },
+    "invoices": {
+      "collection": "invoice",
+      "via": "user"
     }
   }
 }
