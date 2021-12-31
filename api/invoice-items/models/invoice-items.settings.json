@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoice_items",
+  "info": {
+    "name": "InvoiceItems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "invoice": {
+      "model": "invoice"
+    },
+    "product": {
+      "model": "product"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "createdAt": {
+      "type": "datetime"
+    }
+  }
+}

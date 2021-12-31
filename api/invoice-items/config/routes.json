@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/invoice-items",
+      "handler": "invoice-items.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/invoice-items/count",
+      "handler": "invoice-items.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/invoice-items/:id",
+      "handler": "invoice-items.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/invoice-items",
+      "handler": "invoice-items.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/invoice-items/:id",
+      "handler": "invoice-items.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/invoice-items/:id",
+      "handler": "invoice-items.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
