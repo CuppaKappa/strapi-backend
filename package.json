@@ -13,7 +13,7 @@
   "dependencies": {
     "firebase-admin": "^9.11.1",
     "knex": "0.21.18",
-    "pg": "8.5.1",
+    "pg": "8.7.1",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
