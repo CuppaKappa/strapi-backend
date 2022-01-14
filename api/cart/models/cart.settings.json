@@ -19,7 +19,8 @@
     },
     "cart_items": {
       "collection": "cart-items",
-      "via": "cart"
+      "via": "cart",
+      "autopopulate": false
     }
   }
 }

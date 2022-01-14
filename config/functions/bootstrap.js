@@ -61,9 +61,7 @@ const getFilesizeInBytes = filepath => {
 };
 
 const createSeedData = async (files) => {
-
   const handleFiles = (data) => {
-
     var file = files.find(x => x.includes(data.slug));
     file = `./data/uploads/${file}`;
 
@@ -79,7 +77,6 @@ const createSeedData = async (files) => {
     };
     return image;
   };
-
 
   const categoriesPromises = categories.map(({
     ...rest

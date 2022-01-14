@@ -13,10 +13,12 @@
   "attributes": {
     "cart": {
       "via": "cart_items",
-      "model": "cart"
+      "model": "cart",
+      "autopopulate": false
     },
     "product": {
-      "model": "product"
+      "model": "product",
+      "autopopulate": false
     }
   }
 }
